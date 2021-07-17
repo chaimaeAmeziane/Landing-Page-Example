@@ -1,0 +1,99 @@
+.title{
+    font-family:Poppins;
+    text-align: center;
+    margin-top:130px;
+}
+.title h3{
+    font-size: 30px;
+    font-weight:410 ;
+    color :#001580;
+}
+.title span{
+    font-weight:normal;
+    color:black;
+    font-size:20px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-wrapper {
+    width: 900px;
+    height:500px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color:#F9F9F8;
+  }
+  form {
+    padding:40px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  label {
+    font-family: Poppins;
+    font-size: 12px;
+    color: #222;
+    font-weight: 600;
+  }
+  input {
+    margin-top:13px;
+    padding: 9px 9px;
+    width:80%;
+    outline: none;
+    border: 1px solid #cfcfcf;
+  }
+  .firstName , .phone, .age{
+    margin-right: 1%;
+  }
+  
+  .lastName, .email, .country {
+    margin-left: 1%;
+  }
+  .firstName,
+  .lastName,
+  .email,
+  .phone,
+  .age,
+  .country{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+  }
+    
+.firstName,
+.lastName,
+.phone,
+.email,
+.age,
+.country
+{
+  width: 49%;
+}
+
+.paragafterform{
+  text-align:center;
+  font-family: Poppins;
+  padding-left: 18%;
+  padding-right: 18%;
+  padding-top:3%;
+}
+.buttondiv{
+  padding-left: 40px;
+}
+.buttondiv button{
+  color:white;
+  outline: none;
+  border:none;
+  background-color: #0097E0;
+  font-family: Poppins;
+  height:40px;
+  width:120px;
+  border-radius:5px;
+  font-weight: 600;
+}

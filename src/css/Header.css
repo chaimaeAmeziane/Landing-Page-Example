@@ -1,0 +1,115 @@
+.header{
+    margin:0; 
+}
+.ellipse{
+    position: absolute;
+    width:100%;
+    height:115%;
+    z-index:-1;
+}
+.navbar{
+    padding-left: 270px;
+    padding-right: 270px;
+    padding-top: 40px;
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.expand{
+    position:absolute;
+    cursor:pointer;
+}
+.navbar ul{
+    display : flex;
+    padding-left: 0px;
+}
+.navbar ul li {
+  list-style: none;
+ padding : 0 34px;
+}
+.navbar ul ul{
+    position:absolute;
+    display:flex;
+    flex-direction: column;
+    left :57%;
+    top:13%;
+    display:none;
+}
+.navbar ul a{
+    text-decoration: none;
+    color:white;
+}
+.logo1{
+    width:180px;
+    padding-right: 20px;
+}
+.logo2{
+    padding-right: 120px;
+    width:150px;
+
+}
+.about, .courses , .contact{
+    color:white;
+    font-family: Poppins;
+}
+.register{
+    font-family: Poppins;
+    font-size:16px;
+    color:white;
+    height:40px;
+    width:130px;
+    border : none;
+    outline:none;
+    border-radius: 0;
+    background-color: #0097E0;
+    cursor : pointer;
+}
+p{
+    padding-top: 15px;
+}
+p span{
+    display:block;
+    color:white;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 50px;
+}
+.subtitle{
+    color:white;
+    font-family: Poppins;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 21px;
+}
+.divbutton button{
+    background-color: #0097E0;
+    outline:none;
+    border-radius: 3px;
+    border:0;
+    color:white;
+    font-family:Poppins;
+    height:50px;
+    width:250px;
+   font-weight: 650;
+}
+.divbutton{
+    padding-top: 40px;
+    text-align:center;
+}
+.video-js {
+    display :block ;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 113px;
+}
+.video-js .vjs-big-play-button{
+    background-color: #0097E0 !important;
+    border-color: #0097E0 !important;
+    color:black !important;
+    width:52px !important;
+    height:52px !important;
+    border-radius: 50% !important;
+    text-align:center;
+   
+}
