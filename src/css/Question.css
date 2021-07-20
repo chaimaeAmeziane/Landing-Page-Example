@@ -43,5 +43,6 @@
 }
 .hidden{
     display:none;
+    padding:200px;
     height:10vh;
 }

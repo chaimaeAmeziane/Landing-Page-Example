@@ -4,7 +4,7 @@ import logo2 from '../images/logos/e aviator.png'
 import Ellipse from '../images/ellipse/Tracé 614.png'
 import Plane from '../images/video/Groupe de masques 9.png'
 import VideoPlayer from 'react-video-js-player'
-import yoursource from '../video/video.mp4'
+import yoursource from '../video/IAANZ_MCC_2.mp4'
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
 
 
@@ -23,9 +23,12 @@ const Header = () => {
                    <li className="about"><a href="#">About</a></li>
                    <li className="courses"><a href="#">Courses<ArrowDropDownIcon className="expand"/></a>
                       <ul>
-                          <li>Course 1</li>
-                          <li>Course 2</li>
-                          <li>Course 3</li>
+                          <li>PPL Meteorology</li>
+                          <li>PPL Air Law</li>
+                          <li>PPL Human Factors</li>
+                          <li>Flight Navigation</li>
+                          <li>Flight Radio</li>
+                          <li>Aircraft Technology</li>
                       </ul>
                    </li>
                    <li className="contact"><a href="#">Contact</a></li>

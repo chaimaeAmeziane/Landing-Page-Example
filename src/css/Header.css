@@ -52,6 +52,7 @@
 .about, .courses , .contact{
     color:white;
     font-family: Poppins;
+    cursor: pointer;
 }
 .register{
     font-family: Poppins;
@@ -92,6 +93,7 @@ p span{
     height:50px;
     width:250px;
    font-weight: 650;
+   cursor:pointer
 }
 .divbutton{
     padding-top: 40px;

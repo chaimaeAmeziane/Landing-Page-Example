@@ -18,7 +18,7 @@ const Question = () => {
             <div className="how">
                 <div className="how1" id="q">
                   <h3>How does E-Learning work?</h3>
-                  <ExpandMoreIcon id="button" onClick={showtext1}/>
+                  <ExpandMoreIcon id="button" onClick={showtext1} style={{cursor:'pointer'}}/>
                 </div>
 
 
@@ -34,7 +34,7 @@ const Question = () => {
             <div className="how">
                 <div className="how2">
                   <h3>What platform is used to deliver the courses?</h3>
-                  <ExpandMoreIcon id="button" onClick={showtext2}/>
+                  <ExpandMoreIcon id="button" onClick={showtext2} style={{cursor:'pointer'}}/>
                 </div>
                 <div id="parg2" className="hidden">
                 <p>Our e-learning courses have been designed by both educational e-learning professionals and qualified pilots. Each course is split into sections and lessons with theory material which covers the CAA required syllabus along with video footage, photo imagery to ensure you are kept engaged and your different learning styles are met. Interactive activities throughout the course test your knowledge and learning. An instructor is appointed to your course who will follow you through your learning, answer any questions you may have and provide a weekly webinar.
