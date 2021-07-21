@@ -1,47 +1,51 @@
 import '../css/Question.css';
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import {useState} from 'react'
+import { ExpandMore } from '@material-ui/icons';
+import ExpandLessIcon from '@material-ui/icons/ExpandLess';
+
 
 const Question = () => {
-    const showtext1 = () =>{
-        var div = document.getElementById('parg1')
-        div.classList.toggle('hidden')
+    const [selected,setSelected] = useState(null)
+    const toggle = (i) =>{
+        if(selected==i){
+            return setSelected(null)
+        }
+        setSelected(i)
     }
-    const showtext2 = () =>{
-        var div = document.getElementById('parg2')
-        div.classList.toggle('hidden')
-    }
+   const data = [
+       {
+                question: 'How does E-Learning work?',
+                answer : 'Our e-learning courses have been designed by both educational e-learning professionals and qualified pilots. Each course is split into sections and lessons with theory material which covers the CAA required syllabus along with video footage, photo imagery to ensure you are kept engaged and your different learning styles are met. Interactive activities throughout the course test your knowledge and learning. An instructor is appointed to your course who will follow you through your learning, answer any questions you may have and provide a weekly webinar. At the end of your course and when you are ready, you will have the option of booking your assessment with ASPEQ who are the national assessment body for Aviation in New Zealand. We can help you locate your nearest assessment location in New Zealand or overseas',
+       },
+       {
+                question: 'What platform is used to deliver the courses?',
+                answer : '',
+       }
+   ]
     return (
-        <div className="questiondiv">
+        <div>
             <div className="title">
             All your questions answered
             </div>
-            <div className="how">
-                <div className="how1" id="q">
-                  <h3>How does E-Learning work?</h3>
-                  <ExpandMoreIcon id="button" onClick={showtext1} style={{cursor:'pointer'}}/>
-                </div>
+      
+           <div className="wrapper">
+             <div className="accordion">
+                 {data.map((item,i) => (
+                     <div className="item">
+                         <div className="title1" onClick={()=>toggle(i)}>
+                            <h6>{item.question}</h6>
+                            <span>{selected === i ? <ExpandLessIcon /> : <ExpandMore />}</span>
+                         </div>
+                         <div className={selected === i ? 'content show' : 'content'}>
+                             {item.answer}
+                         </div>
+                     </div>
+                 ))}
 
+             </div>
 
-                <div id="parg1" className="hidden">
-                <p>Our e-learning courses have been designed by both educational e-learning professionals and qualified pilots. Each course is split into sections and lessons with theory material which covers the CAA required syllabus along with video footage, photo imagery to ensure you are kept engaged and your different learning styles are met. Interactive activities throughout the course test your knowledge and learning. An instructor is appointed to your course who will follow you through your learning, answer any questions you may have and provide a weekly webinar.
-                           <br></br>At the end of your course and when you are ready, you will have the option of booking your assessment with ASPEQ who are the national assessment body for Aviation in New Zealand. We can help you locate your nearest assessment location in New Zealand or overseas.</p>
-                </div>
+           </div>
 
-            </div>
-
-           
-           
-            <div className="how">
-                <div className="how2">
-                  <h3>What platform is used to deliver the courses?</h3>
-                  <ExpandMoreIcon id="button" onClick={showtext2} style={{cursor:'pointer'}}/>
-                </div>
-                <div id="parg2" className="hidden">
-                <p>Our e-learning courses have been designed by both educational e-learning professionals and qualified pilots. Each course is split into sections and lessons with theory material which covers the CAA required syllabus along with video footage, photo imagery to ensure you are kept engaged and your different learning styles are met. Interactive activities throughout the course test your knowledge and learning. An instructor is appointed to your course who will follow you through your learning, answer any questions you may have and provide a weekly webinar.
-                           <br></br>At the end of your course and when you are ready, you will have the option of booking your assessment with ASPEQ who are the national assessment body for Aviation in New Zealand. We can help you locate your nearest assessment location in New Zealand or overseas.</p>
-                </div>
-            </div>
-            
         </div>
     )
 }

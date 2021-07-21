@@ -7,8 +7,8 @@ const Footer = () => {
         <div className="footer">
             <img src={footerpic} className="footerpic"></img>
             <div className="footer-footer">
-               <img src={logo1} className="logo1"></img>
-               <img src={logo2} className="logo2"></img>
+               <img src={logo1} className="logo1" alt="logo1"></img>
+               <img src={logo2} className="logo2" alt="logo2"></img>
                  <div className="contact">
                       NZ 03 358 0477 (INTL +64 3 358 0477)<br></br>
                       <span>Copyright © 2018 All Rights Reserved IAANZ</span>

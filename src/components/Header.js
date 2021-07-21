@@ -17,8 +17,8 @@ const Header = () => {
         <div className="header">
         <img src={Ellipse} className="ellipse"></img>
            <div className="navbar">
-               <img src={logo1} className="logo1"></img>
-               <img src={logo2} className="logo2"></img>
+               <img src={logo1} className="logo1" alt="logo11"></img>
+               <img src={logo2} className="logo2" alt="logo22"></img>
                <ul>
                    <li className="about"><a href="#">About</a></li>
                    <li className="courses"><a href="#">Courses<ArrowDropDownIcon className="expand"/></a>
